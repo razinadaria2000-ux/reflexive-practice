@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f1e9">
+  <meta name="description" content="Рефлексивная практика — пространство самонаблюдения для студентов-психологов.">
+  <title>Рефлексивная практика</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" data-page="home">
+        <span class="brand-mark">Р</span>
+        <span><strong>Рефлексивная</strong><small>практика</small></span>
+      </a>
+      <div class="side-label">РАБОЧЕЕ ПРОСТРАНСТВО</div>
+      <nav class="nav">
+        <button class="nav-item active" data-page="home"><span>⌂</span> Обзор</button>
+        <button class="nav-item" data-page="diary"><span>▤</span> Дневник реакций</button>
+        <button class="nav-item" data-page="reflection"><span>✧</span> ИИ-рефлексия</button>
+        <button class="nav-item" data-page="practice"><span>◇</span> Практикум</button>
+        <button class="nav-item" data-page="history"><span>◷</span> История наблюдений</button>
+        <button class="nav-item" data-page="supervision"><span>☷</span> Супервизия</button>
+        <button class="nav-item" data-page="tree"><span>♧</span> Моё дерево</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="privacy-note"><span class="lock">⌑</span><div><strong>Ваше пространство</strong><small>Записи хранятся в этом браузере</small></div></div>
+        <button class="text-button" id="resetDemo">Сбросить демонстрационные данные</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">Р</span><strong>Рефлексивная практика</strong></div>
+        <div class="crumb" id="crumb">Рабочее пространство / Обзор</div>
+        <div class="top-actions"><span class="mode-pill"><i></i> Гостевой режим</span><button class="avatar" title="Гостевой профиль">Г</button></div>
+      </header>
+      <div class="content" id="content"></div>
+      <footer>Рефлексивная практика <span>Инструмент самонаблюдения, а не диагностики</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
